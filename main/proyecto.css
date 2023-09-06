@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    min-width: 100vw;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Reglas CSS para el navBar */
+
+nav{
+    width: 100%;
+    height: 2vh;
+    min-height: 70px;
+    background-color: #040D12;
+    padding: 2%;
+}
+
+.appLogo{
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    width: 20%;
+    min-width: 20px;   
+    text-align: center;
+}
+
+.appName{
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.rights{
+    display: block;
+    font-size: 70%;
+    margin: auto;
+}
+
+.alignRight{
+float: right;
+}
+
+.whiteLine{
+background-color: whitesmoke;
+width: 1.6vw;
+height: 3px;
+cursor: pointer;
+}
+
+.marginTop{
+    margin-top: 2px;
+}
+
+.moveTop{
+    margin-top: -1%;
+}
+
+.displayInline{
+    display: inline;
+}
+
+.flex{
+    display: flex;
+}
+
+.marginRight1{
+    margin-right: 10px;
+}
+
+/* Reglas CSS para la app */
+
+.container{
+    display: flex;
+    justify-content: end;
+    margin: 7% 10% 7% 0;
+}
+
+.appContainer{
+    background-color: grey;
+    width: 27vw;
+    height: 40vw;
+    border-radius: 10px;
+}
+
+.balances{
+    display: flex;
+}
+
+.balancesDetails{
+margin: 0 30% 0 0;
+color: rgb(78, 77, 77);
+}
+
+
+
+/* Reglas CSS para el footer */
+
+footer{
+    position: absolute;
+    bottom: 1;
+    width: 100%;
+    height: 2vh;
+    min-height: 70px;
+    background-color: #040D12;
+    padding: 2%;
+
+}
