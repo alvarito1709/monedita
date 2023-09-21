@@ -114,6 +114,10 @@ header a:hover {
     padding: 200px 12px;
 }
 
+#somos-monedita p {
+    margin-top: 0;
+}
+
 #nuestros-cursos {
     background-color: rgb(30, 30, 30);
     color: white;
@@ -279,12 +283,16 @@ footer .container {
         padding-left: 30px;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: left;
         justify-content: center;
     }
 
     #somos-monedita h2 {
         font-size: 4em;
+    }
+
+    #somos-monedita p {
+        margin-top: 0;
     }
 
     #somos-monedita .img-container {
