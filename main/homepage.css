@@ -95,7 +95,7 @@ header a:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("img/hero.jpg");
+    ,url("img/professional\ investors.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -109,36 +109,44 @@ header a:hover {
     font-size: 1.75em;
 }
 
-#somos-proya .container {
+#somos-monedita .container {
     text-align: center;
     padding: 200px 12px;
 }
 
-#nuestros-programas {
+#nuestros-cursos {
     background-color: rgb(30, 30, 30);
     color: white;
     text-align: center;
 }
 
-#nuestros-programas .container {
+#nuestros-cursos .container {
     padding: 150px 0px;
 }
 
-#nuestros-programas h2 {
+#nuestros-cursos h2 {
     margin-top: 0;
     font-size: 3.2em;
 }
 
-#nuestros-programas p {
+#nuestros-cursos p {
     display: none;
+    margin-top: 70px;
 }
 
-#nuetros-programas .carta {
+#nuestros-cursos button {
+    margin-top: 20px;
+}
+
+#nuestros-cursos .carta {
     background-position: center center;
     background-size: cover;
+    display: inline-block;
+    height: 600px;
     padding: 50px 0px;
-    margin: 30px;
+    margin: 0px;
     border-radius: 15px;
+    max-width: 350px;
 }
 
 .carta:first-child {
@@ -147,7 +155,7 @@ header a:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("img/front-end.jpg");
+    ,url("img/mercado-de-capitales.jpg");
 }
 
 .carta:nth-child(2) {
@@ -156,7 +164,7 @@ header a:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("img/full-stack.jpg");
+    ,url("img/análisis-técnico.jpg");
 }
 
 .carta:last-child {
@@ -165,18 +173,33 @@ header a:hover {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("img/python.jpg");
+    ,url("img/análisis-fundamental.jpg");
 }
 
 #caracteristicas .container {
     text-align: center;
-    padding: 200px 12px;
+    padding: 150px 12px;
+}
+
+.subrayado {
+    text-decoration: underline blueviolet; /* Subraya el texto */
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+#caracteristicas ul {
+    padding-top: 50px;
+    padding-left: 500px;
 }
 
 #caracteristicas li {
     margin: 16px 0px;
     font-weight: bold;
+    /* padding-left: 20px; */
 }
+
 
 #final {
     display: flex;
@@ -199,6 +222,8 @@ header a:hover {
 
 footer {
     background-color: rgb(230, 230, 230);
+    text-align: center;
+    margin-bottom: 0;
 }
 
 footer p {
@@ -207,11 +232,17 @@ footer p {
     color: rgb(100, 100, 100);
 }
 
+.texto-legal {
+    font-size: 12px; /* Tamaño de fuente pequeño para el texto legal */
+    align-content: center;
+    margin-top: 20px;
+}
+
 footer .container {
     height: 150px;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
-    align-items: flex-end;
+    /* align-items: flex-end; */
 }
 
 @media (min-width: 720px) {
@@ -236,12 +267,12 @@ footer .container {
         font-size: 5em;
     }
 
-    #somos-proya .container {
+    #somos-monedita .container {
         display: flex;
         justify-content: space-evenly;
     }
 
-    #somos-proya .texto {
+    #somos-monedita .texto {
         width: 50%;
         max-width: 600px;
         text-align: initial;
@@ -252,34 +283,35 @@ footer .container {
         justify-content: center;
     }
 
-    #somos-proya h2 {
+    #somos-monedita h2 {
         font-size: 4em;
     }
 
-    #somos-proya .img-container {
-        background-image: url(img/somos-proya.jpg);
+    #somos-monedita .img-container {
+        background-image: url("img/background1.jpg");
         background-size: cover;
         background-position: center center;
         height: 500px;
         width: 400px;
     }
 
-    #nuestros-programas .programas {
+    #nuestros-cursos .programas {
         display: flex;
         justify-content: center;
     }
 
-    #nuestros-programas p {
+    #nuestros-cursos p {
         display: block;
         margin-bottom: 30px;
+        text-align: left;
     }
 
-    #nuestros-programas h3 {
+    #nuestros-cursos h3 {
         margin-top: 0;
         justify-content: center;
     }
 
-    #nuestros-programas .carta {
+    #nuestros-cursos .carta {
         padding: 50px;
         background-size: 100% 150px;
         background-repeat: no-repeat;
@@ -296,7 +328,7 @@ footer .container {
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("img/front-end-cropped.jpg");
+        ,url("img/mercado-de-capitales.jpg");
     }
     
     .carta:nth-child(2) {
@@ -305,7 +337,7 @@ footer .container {
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("img/full-stack-cropped.jpg");
+        ,url("img/análisis-técnico.jpg");
     }
     
     .carta:last-child {
@@ -314,11 +346,11 @@ footer .container {
             rgba(0,0,0,0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("img/python-cropped.jpg");
+        ,url("img/análisis-fundamental.jpg");
     }
 
     #caracteristicas {
-        background-image: url(img/background-2.jpeg);
+        background-image: url("");
         background-repeat: no-repeat;
         background-size: 500px 400px;
         background-position: calc(100vw - 500px) 120px;
@@ -329,7 +361,7 @@ footer .container {
     }
 
     #caracteristicas ul {
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
     #final h2 {
@@ -350,5 +382,5 @@ footer .container {
     #caracteristicas { 
         background-position-x: calc(100vw - 800px);
     }
-    
+
 }
