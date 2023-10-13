@@ -12,17 +12,29 @@ body {
 }
 
 
-h1 {font-size: 3.5em;}
+h1 {
+    font-size: 3.5em;
+}
 
-h2 {font-size: 2.7em;}
+h2 {
+    font-size: 2.7em;
+}
 
-h3 {font-size: 2em;}
+h3 {
+    font-size: 2em;
+}
 
-p {font-size: 1.25em;}
+p {
+    font-size: 1.25em;
+}
 
-ul {list-style: none;}
+ul {
+    list-style: none;
+}
 
-li {font-size: 1.25em;}
+li {
+    font-size: 1.25em;
+}
 
 button {
     font-size: 1.5em;
@@ -44,7 +56,9 @@ button:hover {
     margin: auto;
 }
 
-.color-acento {color:blueviolet;}
+.color-acento {
+    color: blueviolet;
+}
 
 header {
     background-color: rgb(245, 245, 245);
@@ -54,7 +68,7 @@ header .logo {
     margin: 0;
     padding: 25px 30px;
     font-weight: bold;
-    color:blueviolet;
+    color: blueviolet;
     font-size: 1.6em;
 }
 
@@ -79,7 +93,7 @@ header a {
 }
 
 header a:hover {
-    color:blueviolet;
+    color: blueviolet;
 }
 
 #hero {
@@ -90,12 +104,9 @@ header a:hover {
     flex-direction: column;
     height: 90vh;
     color: white;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("img/professional\ investors.jpeg");
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("img/professional\ investors.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -150,30 +161,21 @@ header a:hover {
 }
 
 .carta:first-child {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("img/mercado-de-capitales.jpg");
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("img/mercado-de-capitales.jpg");
 }
 
 .carta:nth-child(2) {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("img/análisis-técnico.jpg");
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("img/análisis-técnico.jpg");
 }
 
 .carta:last-child {
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("img/análisis-fundamental.jpg");
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("img/análisis-fundamental.jpg");
 }
 
 #caracteristicas .container {
@@ -182,7 +184,8 @@ header a:hover {
 }
 
 .subrayado {
-    text-decoration: underline blueviolet; /* Subraya el texto */
+    text-decoration: underline blueviolet;
+    /* Subraya el texto */
     justify-content: center;
     text-align: center;
     margin-top: 0;
@@ -233,7 +236,8 @@ footer p {
 }
 
 .texto-legal {
-    font-size: 12px; /* Tamaño de fuente pequeño para el texto legal */
+    font-size: 12px;
+    /* Tamaño de fuente pequeño para el texto legal */
     align-content: center;
     margin-top: 20px;
 }
@@ -323,30 +327,21 @@ footer .container {
     }
 
     .carta:first-child {
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("img/mercado-de-capitales.jpg");
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("img/mercado-de-capitales.jpg");
     }
-    
+
     .carta:nth-child(2) {
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("img/análisis-técnico.jpg");
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("img/análisis-técnico.jpg");
     }
-    
+
     .carta:last-child {
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("img/análisis-fundamental.jpg");
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("img/análisis-fundamental.jpg");
     }
 
     #caracteristicas {
@@ -379,7 +374,7 @@ footer .container {
 
 @media (min-width: 1100px) {
 
-    #caracteristicas { 
+    #caracteristicas {
         background-position-x: calc(100vw - 800px);
     }
 
