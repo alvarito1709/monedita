@@ -45,10 +45,36 @@ button {
     box-shadow: 2px 2px 10px black;
     color: white;
     background-color: blueviolet;
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #00DDFF,
+    );
+    display: flex;
+    cursor: pointer;
+    transition: .3s;
+    border: 0;
 }
 
 button:hover {
     background-color: blueviolet;
+    cursor: pointer;
+}
+
+button span {
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+button:hover span {
+    background: none;
+
+}
+
+button:active {
+    transform: scale(0.9);
 }
 
 .container {
@@ -114,10 +140,6 @@ header a:hover {
 
 #hero h1 {
     color: white;
-}
-
-#hero button {
-    font-size: 1.75em;
 }
 
 #somos-monedita .container {

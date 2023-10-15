@@ -100,9 +100,10 @@ header a:hover {
 
 
 
-  div[data-anchor=row-6529278a9e010] {
+div[data-anchor=row-6529278a9e010] {
     background-image: url(https://assets.bbhub.io/professional/sites/10/Group-4061.png);
-  }
+}
+
   @media screen and ( min-width: 760px ) and ( max-width: 1020px ) {
     div[data-anchor=row-6529278a9e010] {
         
