@@ -401,3 +401,7 @@ footer .container {
     }
 
 }
+
+.footer-img{
+    filter: contrast(40%) hue-rotate(20deg) saturate(1000%);
+}
