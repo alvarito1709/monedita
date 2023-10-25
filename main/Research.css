@@ -72,6 +72,7 @@ button:hover {
 
 header {
   background-color: rgb(245, 245, 245);
+  z-index: 1;
 }
 
 header .logo {
@@ -243,7 +244,9 @@ footer p {
   padding: 12px;
   color: rgb(100, 100, 100);
 }
-
+.tradingview-widget-container {
+  z-index: 0;
+}
 .texto-legal {
   font-size: 12px; /* Tamaño de fuente pequeño para el texto legal */
   align-content: center;
