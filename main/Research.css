@@ -34,6 +34,41 @@ ul {
 li {
   font-size: 1.25em;
 }
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 10px black;
+  color: white;
+  background-color: blueviolet;
+  background-image: linear-gradient(150deg, #9500ff, #09f, #00ddff);
+  display: flex;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 0;
+}
+
+button:hover {
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+button span {
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+button:hover span {
+  background: none;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
 #lista ul {
   padding-right: 0px;
   padding-left: 6%;
@@ -46,7 +81,7 @@ li {
   display: inline;
   padding-right: 5px;
 }
-button {
+/* button {
   font-size: 1.5em;
   font-weight: bold;
   padding: 10px 30px;
@@ -59,7 +94,7 @@ button {
 
 button:hover {
   background-color: blueviolet;
-}
+} */
 
 .container {
   max-width: 1400px;
@@ -74,7 +109,6 @@ header {
   background-color: rgb(245, 245, 245);
   z-index: 1;
 }
-
 header .logo {
   margin: 0;
   padding: 25px 30px;
@@ -82,11 +116,17 @@ header .logo {
   color: blueviolet;
   font-size: 1.6em;
 }
-
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   padding-bottom: 25px;
 }
-
 header a {
   padding: 5px 12px;
   text-decoration: none;
