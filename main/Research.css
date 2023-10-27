@@ -94,14 +94,14 @@ button:active {
 
 button:hover {
   background-color: blueviolet;
-} */
+}
 
+*/
 .container {
   max-width: 1400px;
   margin: auto;
 }
-
-.color-acento {
+*/ .color-acento {
   color: blueviolet;
 }
 
@@ -183,23 +183,16 @@ header a:hover {
   color: white;
   text-align: center;
 }
-
-#nuestros-cursos .container {
+*/ #nuestros-cursos .container {
   padding: 150px 0px;
 }
-
-#nuestros-cursos h2 {
+*/ #nuestros-cursos h2 {
   margin-top: 0;
   align-content: center;
 }
 #nuestros-cursos h3 {
   margin-top: 0;
   align-content: center;
-}
-
-#nuestros-cursos p {
-  display: none;
-  margin-top: 70px;
 }
 
 #nuestros-cursos .carta {
@@ -211,7 +204,6 @@ header a:hover {
   margin: 0px;
   border-radius: 15px;
   max-width: auto;
-  font-size: 0.9em;
 }
 
 .carta:first-child {
@@ -221,6 +213,36 @@ header a:hover {
       rgba(0, 0, 0, 0.5)
     ),
     url("img/mercado-de-capitales.jpg");
+}
+
+.carta {
+  background-position-x: center center;
+  background-size: cover;
+  display: flex;
+  padding: 50px 0px;
+  margin: 0px;
+  border-radius: 15px;
+  max-width: auto;
+}
+.carta img {
+  padding: 3em;
+  border: 1em;
+  view-timeline: --image;
+  view-timeline-axis: block;
+  animation-timeline: --image;
+  animation-name: show;
+  /* animation-range: entry 25% cover 30%; */
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
 }
 
 #caracteristicas .grid-container {
