@@ -32,29 +32,47 @@
         <div class="container-fluid pt-5 mt-5">
             <div class="row align-items-center justify-content-center pb-5">
                 <div class="col-md-3 text-light">
-                    <form>
+                    <form action="https://formsubmit.co/example@email.com" method="POST"> <!-- aqui hay que agregar el mail de ejemplo al que va a llegar la info del form -->
                         <h1>Contáctanos</h1>
                         <div class="mb-3">
+
                             <label for="exampleInputEmail1" class="form-label">Email</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                                aria-describedby="emailHelp" name="email" required>
+                            
+
                             <div id="emailHelp" class="form-text" style="color:blueviolet">No compartiremos tu email con
                                 nadie más.</div>
-                            <label for="exampleInputEmail1" class="form-label">Nombre</label>
-                            <input type="nombre" class="form-control" id="Nombre">
-                            <label for="exampleInputEmail1" class="form-label">Apellido</label>
-                            <input type="apellido" class="form-control" id="exampleInputEmail1">
+
+                            <label for="example" class="form-label">Nombre</label>
+                            <input type="nombre" class="form-control" id="Nombre" name="nombre" required>
+                            
+
+                            <label for="example" class="form-label">Asunto</label>
+                            <input type="asunto" class="form-control" id="example" name="asunto" required>
+                            
+
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu consulta</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="consulta" required></textarea>
+                            
                         </div>
                         <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Acepto los terminos y
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                            <label class="form-check-label" for="exampleCheck1">Acepto los términos y
                                 condiciones</label>
+                                
                         </div>
                         <button type="submit" class="btn-form" style="background-color:blueviolet">Enviar</button>
+                        
+                        
+                        <input type="hidden" name="_captcha" value="false"> 
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/monedita-main/contacto.html">
+
+                        <!-- lo corri desde cmd, cd (la carpeta donde esta alojado el proyecto) > python -m http.server 5500 -->
+
+                
                     </form>
                 </div>
                 <div class="col-md-3 mx-md-5 pt-4">
@@ -77,6 +95,26 @@
         </div>
         <p>&copy; Monedita 2023</p>
     </footer>
+
+    <script>
+        (function (){
+            'use strict'
+
+            var forms = document.querySelectorAll('.needs-validation')
+
+            Array.prototype.slice.call(forms)
+                forEach(function(form){
+                    form.addEventListener('submit', function (event){
+                        if (!form.checkValidity()){
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

@@ -214,14 +214,21 @@ header a:hover {
     margin-bottom: 50px;
 }
 
+#caracterisricas .lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 #caracteristicas ul {
-    padding-top: 50px;
-    padding-left: 500px;
+    padding: 0;
 }
 
 #caracteristicas li {
     margin: 16px 0px;
     font-weight: bold;
+    text-align: center;
     /* padding-left: 20px; */
 }
 
@@ -246,7 +253,6 @@ header a:hover {
 }
 
 footer {
-    background-color: rgb(230, 230, 230);
     text-align: center;
     margin-bottom: 0;
 }
@@ -378,7 +384,8 @@ footer .container {
     }
 
     #caracteristicas ul {
-        margin-left: 50px;
+        align-content: center;
+        justify-content: center;
     }
 
     #final h2 {
