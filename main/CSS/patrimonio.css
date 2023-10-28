@@ -1,0 +1,468 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+.floatRight {
+    float: right;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.positivo {
+    fill: rgb(16, 185, 16);
+}
+
+.negativo {
+    fill: rgb(231, 11, 11);
+    ;
+}
+
+
+    button:hover {
+        background-color: blueviolet;
+        color: whitesmoke;
+    }
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.lineaSeparadora{
+    width: 100%;
+    height: 1px;
+    background-color: whitesmoke;
+
+}
+
+.color-acento {
+    color: blueviolet;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+    header .logo {
+        margin: 0;
+        padding: 25px 30px;
+        font-weight: bold;
+        color: blueviolet;
+        font-size: 1.6em;
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    header a {
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+
+        header a:hover {
+            color: blueviolet;
+        }
+div[data-anchor=row-6529278a9e010] {
+    background-image: url(https://assets.bbhub.io/professional/sites/10/Group-4061.png);
+}
+
+@media screen and ( min-width: 760px ) and ( max-width: 1020px ) {
+    div[data-anchor=row-6529278a9e010] {
+    }
+}
+
+@media screen and ( max-width: 759px ) {
+    div[data-anchor=row-6529278a9e010] {
+    }
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient( 0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5) ),url("img/professional\ investors.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+    #hero h1 {
+        color: white;
+    }
+
+    #hero button {
+        font-size: 1.75em;
+    }
+
+#somos-monedita .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-cursos {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    padding: 5%;
+}
+
+    #nuestros-cursos .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #nuestros-cursos h2 {
+        margin-top: 0;
+        font-size: 3.2em;
+    }
+
+    #nuestros-cursos p {
+        display: none;
+        margin-top: 70px;
+    }
+
+    #nuestros-cursos button {
+        margin-top: 20px;
+    }
+
+    #nuestros-cursos .carta {
+        background-position: center center;
+        background-size: cover;
+        float: right;
+        height: 570px;
+        width: 50vw;
+        padding: 50px 0px;
+        margin: 0px;
+        border-radius: 15px;
+        max-width: 350px;
+    }
+
+    #nuestros-cursos h3{
+        text-align: left;
+    }
+
+    #nuestros-cursos form span{
+        text-align: right;
+        margin-right: 10px;
+    }
+
+.containerCalculadora{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+    height: 60vw;
+}
+
+.containerInputCalculadora{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.containerInputCalculadora input{
+    background-color: whitesmoke;
+    width: 15%;
+    height: 40px;
+    min-width: 50px;
+    border: none;
+}
+
+#submit{
+ width: 30%;
+ min-width: 40px;
+ height: 3vw;
+ margin: auto;
+ border: none;
+ border-radius: 5px;
+ font-weight: 650;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+#tablaPatrimonial{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+    #tablaPatrimonial h3{
+        margin-left: 30px;
+    }
+
+    #tablaPatrimonial h4 {
+        text-align: center;
+    }
+
+#tablaPatrimonial hr{
+    width: 80vw;
+}
+
+table{
+    
+    width: 80%;
+    margin: 30px auto 30px;
+}
+.valorNeto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.2em;
+    font-weight: 650;
+}
+
+th:first-of-type{
+    width: 50%;
+}
+
+th{
+    width: 25%;
+}
+
+th, td{
+    padding: 2px;
+}
+
+table tr:nth-child(odd) {
+    background-color: whitesmoke;
+}
+
+table tr:nth-child(even) {
+    background-color: gray;
+}
+
+
+
+#caracteristicas .container {
+    text-align: center;
+    padding: 150px 12px;
+}
+
+.subrayado {
+    text-decoration: underline blueviolet; /* Subraya el texto */
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+#caracteristicas ul {
+    padding-top: 50px;
+    padding-left: 500px;
+}
+
+#caracteristicas li {
+    margin: 16px 0px;
+    font-weight: bold;
+    /* padding-left: 20px; */
+}
+
+
+#final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+    #final h2 {
+        font-size: 9vw;
+    }
+
+    #final button {
+        font-size: 5vw;
+    }
+
+footer {
+    background-color: rgb(230, 230, 230);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+    footer p {
+        margin: 0;
+        padding: 12px;
+        color: rgb(100, 100, 100);
+    }
+
+.texto-legal {
+    font-size: 12px; /* Tamaño de fuente pequeño para el texto legal */
+    align-content: center;
+    margin-top: 20px;
+}
+
+footer .container {
+    height: 150px;
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: flex-end; */
+}
+
+@media (min-width: 720px) {
+
+    header {
+        width: 100%;
+    }
+
+        header .container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        header nav {
+            flex-direction: row;
+            padding-bottom: 0;
+            padding-right: 20px;
+        }
+
+    #hero h1 {
+        font-size: 5em;
+    }
+
+    #somos-monedita .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #somos-monedita .texto {
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #somos-monedita h2 {
+        font-size: 4em;
+    }
+
+    #somos-monedita .img-container {
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+
+    #nuestros-cursos .programas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-cursos p {
+        display: block;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    #nuestros-cursos h3 {
+        margin-top: 0;
+        justify-content: center;
+    }
+
+    #nuestros-cursos .carta {
+        padding: 50px;
+        background-size: 50% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(255, 255, 255, 0.938);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        margin: 15px;
+    }
+
+
+
+    #caracteristicas {
+        background-image: url("");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+        #caracteristicas .container {
+            text-align: initial;
+        }
+
+        #caracteristicas ul {
+            margin-left: 50px;
+        }
+
+    #final h2 {
+        font-size: 5em;
+    }
+
+    #final button {
+        font-size: 2em;
+    }
+
+    footer .container {
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1100px) {
+
+    #caracteristicas {
+        background-position-x: calc(100vw - 800px);
+    }
+}
