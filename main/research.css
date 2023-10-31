@@ -1,0 +1,460 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.25em;
+}
+button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 10px black;
+  color: white;
+  background-color: blueviolet;
+  background-image: linear-gradient(150deg, #9500ff, #09f, #00ddff);
+  display: flex;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 0;
+}
+
+button:hover {
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+button span {
+  padding: 16px 24px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+button:hover span {
+  background: none;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+#lista ul {
+  padding-right: 0px;
+  padding-left: 6%;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin: 0px;
+}
+#lista li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 5px;
+}
+/* button {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2px solid black;
+  box-shadow: 2px 2px 10px black;
+  color: white;
+  background-color: blueviolet;
+}
+
+button:hover {
+  background-color: blueviolet;
+}
+
+*/
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+*/ .color-acento {
+  color: blueviolet;
+}
+
+header {
+  background-color: rgb(245, 245, 245);
+  z-index: 1;
+}
+
+header .logo {
+  background-image: linear-gradient(45deg, blueviolet, lightblue); /* Degradado de blueviolet a lightblue */
+  -webkit-background-clip: text; /* Clip de fondo al texto para que el degradado solo afecte al texto en navegadores webkit (Safari, Chrome) */
+  background-clip: text;
+  color: transparent; /* Texto transparente para que se muestre el degradado de fondo */
+  display: inline-block;
+  font-size: 36px;
+  animation: colorChange 2s infinite; /* Animación de cambio de color infinita en 4 segundos */
+}
+
+@keyframes colorChange {
+  0% {
+      background-position: 0% 50%; /* Comienza desde la izquierda */
+  }
+  100% {
+      background-position: 100% 50%; /* Termina a la derecha */
+  }
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  color: blueviolet;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  color: white;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("img/CG_AUDIENCE_SELLSIDE_E.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#hero h1 {
+  color: white;
+}
+
+#hero button {
+  font-size: 1.75em;
+}
+
+#somos-monedita .container {
+  text-align: center;
+  padding: 70px 12px;
+}
+
+#nuestros-cursos {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+
+#nuestros-cursos .container {
+  padding: 150px 0px;
+}
+
+#nuestros-cursos h2 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#nuestros-cursos p {
+  display: none;
+  margin-top: 70px;
+}
+
+#nuestros-cursos button {
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+#nuestros-cursos .carta {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 300px;
+  padding: 50px 0px;
+  margin: 20px;
+  border-radius: 15px;
+  width: 350px;
+}
+
+.carta:first-child {
+  background-image: linear-gradient(0deg,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)), 
+  url("img/arg1.jpeg");
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(0deg,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)), url("img/global1.jpeg");
+}
+
+.carta:last-child {
+  background-image: linear-gradient(0deg,
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)), url("img/arg3.jpeg");
+}
+
+#caracteristicas .grid-container {
+  padding: 10rem;
+  display: inline;
+  align-items: center;
+  text-align: center;
+  padding: 150px 12px;
+}
+.grid-item {
+  display: inline-block;
+  align-items: center;
+  margin-left: 8.5%;
+}
+.subrayado {
+  text-decoration: underline blueviolet; /* Subraya el texto */
+  justify-content: center;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+#caracteristicas ul {
+  padding-top: 50px;
+  padding-left: 500px;
+}
+
+#caracteristicas li {
+  margin: 16px 0px;
+  font-weight: bold;
+  /* padding-left: 20px; */
+}
+
+#final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  height: 80vh;
+}
+
+#final h2 {
+  font-size: 9vw;
+}
+
+#final button {
+  font-size: 5vw;
+}
+
+footer {
+  background-color: white;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+}
+.tradingview-widget-container {
+  z-index: 0;
+}
+.texto-legal {
+  font-size: 12px; /* Tamaño de fuente pequeño para el texto legal */
+  align-content: center;
+  margin-top: 20px;
+}
+
+footer .container {
+  height: 150px;
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: flex-end; */
+}
+
+@media (min-width: 720px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+
+  #hero h1 {
+    font-size: 5em;
+  }
+
+  #somos-monedita .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #somos-monedita .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #somos-monedita h2 {
+    font-size: 4em;
+  }
+
+  #somos-monedita .img-container {
+    background-image: url("img/background1.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+  }
+
+  #nuestros-cursos .programas {
+    display: flex;
+    justify-content: center;
+}
+
+#nuestros-cursos p {
+    display: block;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+#nuestros-cursos h3 {
+    margin-top: 0;
+    justify-content: center;
+}
+
+#nuestros-cursos button{
+    margin-left: 20px;
+}
+
+#nuestros-cursos .carta {
+    padding: 50px;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgb(50, 50, 50, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    height: 600px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+
+  .carta:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("img/arg1.jpeg");
+  }
+
+  .carta:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("img/global1.jpeg");
+  }
+
+  .carta:last-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url("img/arg3.jpeg");
+  }
+
+  #caracteristicas {
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw - 500px) 120px;
+  }
+
+  #caracteristicas .container {
+    text-align: initial;
+  }
+
+  #caracteristicas ul {
+    margin-left: 50px;
+  }
+
+  #final h2 {
+    font-size: 5em;
+  }
+
+  #final button {
+    font-size: 2em;
+  }
+
+  footer .container {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1100px) {
+  #caracteristicas {
+    background-position-x: calc(100vw - 800px);
+  }
+}

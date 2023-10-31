@@ -233,7 +233,6 @@ div[data-anchor=row-6529278a9e010] {
 }
 
 footer {
-    background-color: rgb(230, 230, 230);
     text-align: center;
     margin-bottom: 0;
 }
@@ -393,12 +392,13 @@ footer .container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    cursor: pointer;
+    align-content: center;
     margin-bottom: 10px;
 }
 
-.iconoDeBalance{
-    height: 6.5vw;
+.iconoDeBalance {
+    height: 5.4vw;
+    cursor: pointer;
 }
 
 @media (min-width: 720px) {

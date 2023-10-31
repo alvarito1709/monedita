@@ -116,6 +116,7 @@ header a {
     text-decoration: none;
     font-weight: bold;
     color: black;
+    transition: color, 0.5s;
 }
 
 header a:hover {
@@ -169,17 +170,18 @@ header a:hover {
 
 #nuestros-cursos button {
     margin-top: 20px;
+    margin-left: 80px;
 }
 
 #nuestros-cursos .carta {
     background-position: center center;
     background-size: cover;
     display: inline-block;
-    height: 600px;
+    height: 300px;
     padding: 50px 0px;
-    margin: 0px;
+    margin: 20px;
     border-radius: 15px;
-    max-width: 350px;
+    width: 350px;
 }
 
 .carta:first-child {
@@ -214,14 +216,21 @@ header a:hover {
     margin-bottom: 50px;
 }
 
+#caracterisricas .lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 #caracteristicas ul {
-    padding-top: 50px;
-    padding-left: 500px;
+    padding: 0;
 }
 
 #caracteristicas li {
     margin: 16px 0px;
     font-weight: bold;
+    text-align: center;
     /* padding-left: 20px; */
 }
 
@@ -246,7 +255,6 @@ header a:hover {
 }
 
 footer {
-    background-color: rgb(230, 230, 230);
     text-align: center;
     margin-bottom: 0;
 }
@@ -337,6 +345,10 @@ footer .container {
         justify-content: center;
     }
 
+    #nuestros-cursos button{
+        margin-left: 20px;
+    }
+
     #nuestros-cursos .carta {
         padding: 50px;
         background-size: 100% 150px;
@@ -344,6 +356,7 @@ footer .container {
         background-position-y: 0;
         background-color: rgb(50, 50, 50, 0.5);
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        height: 600px;
         border-radius: 15px;
         margin: 15px;
     }
@@ -378,7 +391,8 @@ footer .container {
     }
 
     #caracteristicas ul {
-        margin-left: 50px;
+        align-content: center;
+        justify-content: center;
     }
 
     #final h2 {
